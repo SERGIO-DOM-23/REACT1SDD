@@ -3,6 +3,7 @@ import Header from './componentes/headers/Header';
 import Home from './componentes/Pages/Home';
 import Carrusel from "./componentes/carrusel/Carrusel";
 import Footer from "./componentes/footers/Footer";
+import Contextousers from "./assets/context/Contextousers";
 
 
 
@@ -10,12 +11,12 @@ import Footer from "./componentes/footers/Footer";
 
 function App() {
   return (
-    <>
+    <Contextousers>
       <Header />
       <Carrusel />
       <Home />
       <Footer />
-    </>
+    </Contextousers>
   );
 }
 

@@ -1,9 +1,12 @@
 import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import { useContext } from 'react';
+import { Contextousuarios } from '../../assets/context/Contextousers';
 
 
 const Header =() => {
 
+  const {user,setUser} = useContext(Contextousuarios)
+  console.log(user);
   
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
