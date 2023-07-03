@@ -4,8 +4,7 @@ import { useContext } from 'react';
 
 const Header =() => {
 
-    const {user,setUser} = useContext(ContextoUsuario);
-    console.log(user);
+  
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
