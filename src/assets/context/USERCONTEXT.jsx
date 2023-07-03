@@ -4,19 +4,18 @@ export const ContextoUsuario = createContext() //CONTEXTO QUE SE EXPORTA
 
 
 
-const USERCONTEXT = ({ Children }) => {
+const Usercontext = ({Children}) => {
   const [user, setUser] = useState("SIN USUARIOS")
+  console.log(user)
 
   return (
     <ContextoUsuario.Provider value={{ user, setUser }}>
-
       {Children}
-
     </ContextoUsuario.Provider>
   )
 }
 
-export default USERCONTEXT
+export default Usercontext
 
 
 

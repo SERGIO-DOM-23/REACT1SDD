@@ -1,8 +1,10 @@
-import react from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container,Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import { useContext } from 'react';
 
-function Header() {
+
+const Header =() => {
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
