@@ -1,14 +1,3 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "nombre": "jose luis",
-            "apellido": "rodriguez"
-        },
-        {
-            "id": 2,
-            "nombre": "roque",
-            "apellido": "larrosa"
-        }
-    ]
+    "users": [ ]
 }

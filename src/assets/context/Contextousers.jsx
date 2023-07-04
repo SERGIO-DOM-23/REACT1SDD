@@ -7,11 +7,11 @@ export const Contextousuarios = createContext()
 
 const Contextousers = ({ children }) => {
 
-    const [user, setUser] = useState("sin usuario")
+    const [users, setUsers] = useState("sin usuario")
 
 
     return (
-        <Contextousuarios.Provider value={{ user, setUser }}>
+        <Contextousuarios.Provider value={{ users, setUsers }}>
             {children}
         </Contextousuarios.Provider>
     )
