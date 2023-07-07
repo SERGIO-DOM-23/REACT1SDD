@@ -7,7 +7,7 @@ export const Contextousuarios = createContext()
 
 const Contextousers = ({ children }) => {
 
-    const [users, setUsers] = useState("sin usuario")
+    const [users, setUsers] = useState()
 
 
     return (

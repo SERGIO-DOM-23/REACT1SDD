@@ -5,8 +5,8 @@ import { Contextousuarios } from '../../assets/context/Contextousers';
 
 const Header =() => {
 
-  const {users,setUsers} = useContext(Contextousuarios)
-  console.log(users);
+ // const {users,setUsers} = useContext(Contextousuarios)
+  //console.log(users);
   
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
