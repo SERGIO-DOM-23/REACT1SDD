@@ -1,16 +1,46 @@
 {
   "users": [
     {
+      "nombre": "Sergio daniel",
+      "apellido": "Dominguez",
+      "edad": "31",
+      "password": "123",
       "id": 1
     },
     {
+      "nombre": "jorge",
+      "apellido": "juarez",
+      "edad": "50",
+      "password": "456",
       "id": 2
     },
     {
+      "nombre": "jose daniel",
+      "apellido": "olea",
+      "edad": "36",
+      "password": "789",
       "id": 3
     },
     {
+      "nombre": "octavio",
+      "apellido": "vera",
+      "edad": "60",
+      "password": "1598",
       "id": 4
+    },
+    {
+      "nombre": "jorgelina",
+      "apellido": "avila",
+      "edad": "45",
+      "password": "753",
+      "id": 5
+    },
+    {
+      "nombre": "nadia",
+      "apellido": "salaz",
+      "edad": "41",
+      "password": "258",
+      "id": 6
     }
   ]
 }

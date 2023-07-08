@@ -17,14 +17,13 @@ const RegisterUsers = () => {
     
     const handleChange = (e) => {  //con esta funcion actualizaremos dataUser y setdataUser- aqui tomamos datos del formulario/actualizamos los valores del estado con los inputs
         setdataUser({ ...dataUser, [e.target.id]: e.target.value })
-        console.log(dataUser);
     }
 
 
 
 
     const handleSubmit = (e) => { //poner datos en la fake api
-        e.preventDeFaultt()
+        e.preventDefault()
         try {
             const response = axios.post("http://localhost:8080/users", dataUser)
             console.log(response);
