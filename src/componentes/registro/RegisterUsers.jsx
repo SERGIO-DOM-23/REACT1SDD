@@ -1,5 +1,6 @@
 import { useState } from "react"
 import axios from "axios"
+import { Container, Row ,Col } from "react-bootstrap"
 
 
 
@@ -10,12 +11,13 @@ const RegisterUsers = () => {
         apellido: "",
         edad: "",
         password: "",
-
+        
     })
-
-
+    
+    
     const handleChange = (e) => {  //con esta funcion actualizaremos dataUser y setdataUser- aqui tomamos datos del formulario/actualizamos los valores del estado con los inputs
         setdataUser({ ...dataUser, [e.target.id]: e.target.value })
+        console.log(dataUser);
     }
 
 
@@ -43,7 +45,16 @@ const RegisterUsers = () => {
     return (
 
         <>
-            <form onSubmit={handleSubmit}>
+
+        <Container>
+            <Row>
+                <Col>
+
+                <h1>Registro Usuarios</h1>
+                
+                <br />
+
+                <form onSubmit={handleSubmit}>
 
                 <div className="mb-3">
                     <label htmlFor="nombre" className="form-label">Nombre</label>
@@ -69,9 +80,18 @@ const RegisterUsers = () => {
 
             </form>
 
+
+                </Col>
+            </Row>
+        </Container>
+
+
+
+            
         </>
 
-    )
+)
+
 }
 
 export default RegisterUsers    
