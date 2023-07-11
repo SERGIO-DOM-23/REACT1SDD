@@ -4,7 +4,8 @@ import Home from './componentes/Pages/Home';
 import Carrusel from "./componentes/carrusel/Carrusel";
 import Footer from "./componentes/footers/Footer";
 import Contextousers from "./assets/context/Contextousers";
-import RegisterUsers from "./componentes/registro/RegisterUsers";
+import Rutas from "./componentes/rutas/Rutas";
+
 
 
 
@@ -15,8 +16,7 @@ function App() {
     <Contextousers>
       <Header />
       <Carrusel />
-      <Home />
-      <RegisterUsers/>
+      <Rutas />
       <Footer />
     </Contextousers>
   );
