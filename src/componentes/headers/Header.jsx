@@ -19,8 +19,8 @@ const Header =() => {
             <Nav.Link href="/Register">Registrate</Nav.Link>
             <NavDropdown title="MENU" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Catalogo</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Productos
+              <NavDropdown.Item href="/cargaProductos">
+                Alta Productos
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Ofertas</NavDropdown.Item>
               <NavDropdown.Divider />

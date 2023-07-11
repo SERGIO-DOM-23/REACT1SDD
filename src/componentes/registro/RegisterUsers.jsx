@@ -75,7 +75,7 @@ const RegisterUsers = () => {
                     <input type="password" className="form-control" value={dataUser.password} onChange={handleChange} id="password" aria-describedby="password" />
 
                 </div>
-                <button type="submit" className="btn btn-primary">Enviar</button>
+                <button type="submit" className="btn btn-primary">Enviar Registro</button>
 
             </form>
 
