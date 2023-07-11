@@ -41,6 +41,20 @@
       "edad": "41",
       "password": "258",
       "id": 6
+    },
+    {
+      "nombre": "luis",
+      "apellido": "domignuez",
+      "edad": "65",
+      "password": "147",
+      "id": 7
+    },
+    {
+      "nombre": "abel",
+      "apellido": "acosta",
+      "edad": "39",
+      "password": "756",
+      "id": 8
     }
   ]
 }
