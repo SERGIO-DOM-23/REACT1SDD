@@ -1,23 +1,37 @@
-import { Container, Form, Row, Col ,Button} from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import { useState } from "react"
 import axios from "axios"
 
 const FormAddProd = () => {
 
   const [productos, setproductos] = useState({
-    Descripcion:"",
-    Precio:"",
-    Codigo:"",
-    Stock:"",
-    Imagen:"",
+    descripcion: "",
+    precio: "",
+    codigo: "",
+    stock: "",
+    imagen: "",
   })
 
-  const handleChange =(e)=>{
-    setproductos({ ... productos, [e.target.id]:e.target.value})
+  const handleChange = (e) => {
+    setproductos({ ...productos, [e.target.id]: e.target.value })
   }
 
-  const handleSubmit =(e) =>{
-    e.preventDefault(),
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    try {
+      const response = axios.post("http://localhost:8080/productos", productos);
+      console.log(response);
+      setproductos({ descripcion: "",
+        precio: "",
+        codigo: "",
+        stock: "",
+        imagen: "",
+
+      })
+
+    } catch (error) {
+
+    }
 
   }
 
@@ -31,50 +45,51 @@ const FormAddProd = () => {
       <Container>
         <Row>
           <Col>
-            <Form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
 
               <div className="mb-3">
                 <label htmlFor="descripcion" className="form-label">Descripcion</label>
-                <input type="text" className="form-control" value={productos.Descripcion} onChange={handleChange} id="descripcion" />
+                <input type="text" className="form-control" value={productos.descripcion} onChange={handleChange} id="descripcion" aria-description="descripcion" />
 
               </div>
 
-              
+
               <div className="mb-3">
                 <label htmlFor="precio" className="form-label">Precio</label>
-                <input type="number" className="form-control" value={productos.Precio} onChange={handleChange} id="precio" />
+                <input type="number" className="form-control" value={productos.precio} onChange={handleChange} id="precio" />
 
               </div>
 
               <div className="mb-3">
                 <label htmlFor="codigo" className="form-label">Codigo</label>
-                <input type="text" className="form-control" value={productos.Codigo} onChange={handleChange} id="codigo" />
+                <input type="text" className="form-control" value={productos.codigo} onChange={handleChange} id="codigo" />
 
               </div>
 
               <div className="mb-3">
                 <label htmlFor="stock" className="form-label">Stock</label>
-                <input type="number" className="form-control" value={productos.Stock} onChange={handleChange} id="stock" />
+                <input type="number" className="form-control" value={productos.stock} onChange={handleChange} id="stock" />
 
               </div>
 
               <div className="mb-3">
                 <label htmlFor="imagen" className="form-label">Imagen</label>
-                <input type="imagen" className="form-control" value={productos.Imagen} onChange={handleChange} id="imagen" />
+                <input type="imagen" className="form-control" value={productos.imagen} onChange={handleChange} id="imagen" />
 
               </div>
 
               <Button type="submit" className="btn btn-success">Cargar</Button>
 
-              <Button type="submit" className="btn btn-warning m-4">Editar</Button>
+              
+
+
+
+
+
+            </form>
+            <Button type="submit" className="btn btn-warning m-4">Editar</Button>
 
               <Button type="submit" className="btn btn-danger">Borrar</Button>
-
-
-
-
-
-            </Form>
 
           </Col>
         </Row>
