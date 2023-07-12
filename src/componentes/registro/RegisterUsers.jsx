@@ -9,7 +9,7 @@ const RegisterUsers = () => {
     const [dataUser, setdataUser] = useState({
         nombre: "",
         apellido: "",
-        edad: "",
+        email: "",
         password: "",
         
     })
@@ -30,7 +30,7 @@ const RegisterUsers = () => {
             setdataUser({
                 nombre: "", 
                 apellido: "",
-                edad: "",
+                email: "",
                 password: "",
             });
 
@@ -66,8 +66,8 @@ const RegisterUsers = () => {
 
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="edad" className="form-label">Edad</label>
-                    <input type="number" className="form-control" value={dataUser.edad} onChange={handleChange} id="edad" aria-describedby="edad" />
+                    <label htmlFor="email" className="form-label">Email</label>
+                    <input type="text" className="form-control" value={dataUser.email} onChange={handleChange} id="email" aria-describedby="email" />
 
                 </div>
                 <div className="mb-3">
